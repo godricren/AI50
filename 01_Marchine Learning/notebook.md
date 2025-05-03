@@ -19,7 +19,7 @@
 ### 传统算法（rule -based algorithm） vs 人工智能算法(data based algorithm)
 * rule based algorithm 
 * data based algorithm
-## K-Nearest Neighbor
+## K-Nearest Neighbors
 ```python
 
 from sklearn.datasets import load_iris
@@ -39,5 +39,7 @@ y_pred = clf.predict(X=X_test)
 
 joblib.dump(value=clf,filename="clf.aura")
 ```
-
+### KNN算法原理
+核心理念：鸟随鸾凤飞腾远，人伴贤良品德高  
+ 
 
