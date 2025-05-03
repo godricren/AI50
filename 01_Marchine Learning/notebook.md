@@ -1,4 +1,4 @@
-## Machine Learning 机器学习
+## Machine Learning 机器学习相关概念
 `Machine` 在这里指的是平台，系统，代码等，不是计算机。  
 `Learning` 代码在经历了某些过程以后，性能会得到提升。这个过程就叫做学习  
 ### 机器学习的项目流程
@@ -19,5 +19,25 @@
 ### 传统算法（rule -based algorithm） vs 人工智能算法(data based algorithm)
 * rule based algorithm 
 * data based algorithm
+## K-Nearest Neighbor
+```python
+
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+import joblib
+
+
+X,y = load_iris(return_X_y=True)
+X_train, y_train, X_test, y_text = train_test_split(X,y,
+                                                    train_size=0.2,
+                                                    random_state=42,
+                                                    shuffle=True)
+clf = KNeighborsClassifier()
+clf.fit(X=X_train,y=y_train)
+y_pred = clf.predict(X=X_test)
+
+joblib.dump(value=clf,filename="clf.aura")
+```
 
 
