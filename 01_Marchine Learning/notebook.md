@@ -41,5 +41,6 @@ joblib.dump(value=clf,filename="clf.aura")
 ```
 ### KNN算法原理
 核心理念：鸟随鸾凤飞腾远，人伴贤良品德高  
- 
+推理流程：
+1. 
 
